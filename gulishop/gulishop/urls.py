@@ -17,10 +17,12 @@ from django.conf.urls import url, include
 import xadmin
 from django.views.static import serve
 from gulishop.settings import MEDIA_ROOT
-import DjangoUeditor
+from goods.views import StudentsView, StudentsSingleView
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
-    url(r'^ueditor/', include('DjangoUeditor.urls'))
+    url(r'^ueditor/', include('DjangoUeditor.urls')),
+    url(r'^students/$', StudentsView.as_view()),
+    url(r'^students/(\d+)/$', StudentsSingleView.as_view()),
 ]

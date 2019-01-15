@@ -1,6 +1,6 @@
 import xadmin
 from xadmin.views import BaseAdminView, CommAdminView
-from .models import GoodsCategory, Goods, CategoryBrand, GoodsImage, Banner
+from .models import GoodsCategory, Goods, CategoryBrand, GoodsImage, Banner, Students
 
 
 class BaseXadminSetting(object):
@@ -36,6 +36,10 @@ class BannerXadmin(object):
     list_display = ['goods', 'image', 'index', 'add_time']
 
 
+class StudentsXadmin(object):
+    list_display = ['name', 'age', 'add_time']
+
+
 xadmin.site.register(CommAdminView, CommXadminSetting)
 xadmin.site.register(BaseAdminView, BaseXadminSetting)
 xadmin.site.register(GoodsCategory, GoodsCategoryXadmin)
@@ -43,3 +47,4 @@ xadmin.site.register(Goods, GoodsXadmin)
 xadmin.site.register(CategoryBrand, CategoryBrandXadmin)
 xadmin.site.register(GoodsImage, GoodsImageXadmin)
 xadmin.site.register(Banner, BannerXadmin)
+xadmin.site.register(Students, StudentsXadmin)

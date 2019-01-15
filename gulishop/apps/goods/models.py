@@ -95,3 +95,16 @@ class Banner(models.Model):
         verbose_name = '首页轮播图信息'
         verbose_name_plural = verbose_name
 
+
+class Students(models.Model):
+    name = models.CharField(max_length=30, verbose_name='学生姓名')
+    age = models.IntegerField(verbose_name='年龄')
+    add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = '学生信息'
+        verbose_name_plural = verbose_name
+
