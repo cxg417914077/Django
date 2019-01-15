@@ -20,7 +20,7 @@ class GoodsCategoryXadmin(object):
 
 
 class GoodsXadmin(object):
-    list_display = ['name', 'category', 'goods_sn', 'goods_brief', 'desc', 'good_front_image', 'market_price', 'shop_price', 'ship_free', 'click_num', 'fav_num', 'goods_num', 'sold_num', 'is_hot', 'is_new', 'add_time']
+    list_display = ['name', 'category', 'goods_sn', 'goods_brief', 'good_front_image', 'click_num', 'add_time']
 
 
 class CategoryBrandXadmin(object):

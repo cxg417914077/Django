@@ -48,7 +48,7 @@ class Goods(models.Model):
 
 class CategoryBrand(models.Model):
     category = models.ForeignKey(GoodsCategory, verbose_name='所属类别', related_name='brands')
-    image = models.ImageField(upload_to='brand/image', max_length=200, verbose_name='赞助图片')
+    image = models.ImageField(upload_to='brand/images', max_length=200, verbose_name='赞助图片')
     name = models.CharField(max_length=50, verbose_name='赞助名称')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
@@ -62,7 +62,7 @@ class CategoryBrand(models.Model):
 
 class GoodsImage(models.Model):
     goods = models.ForeignKey(Goods, verbose_name='所属商品', related_name='images')
-    image = models.ImageField(upload_to='goods/image', max_length=200, verbose_name='商品轮播图片')
+    image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品轮播图片')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     def __str__(self):
@@ -75,7 +75,7 @@ class GoodsImage(models.Model):
 
 class Banner(models.Model):
     goods = models.ForeignKey(Goods, verbose_name='所属商品', related_name='banners')
-    image = models.ImageField(upload_to='goods/image', max_length=200, verbose_name='首页轮播图片')
+    image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='首页轮播图片')
     index = models.IntegerField(verbose_name='轮播顺序')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
