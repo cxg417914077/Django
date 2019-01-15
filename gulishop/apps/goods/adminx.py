@@ -21,6 +21,7 @@ class GoodsCategoryXadmin(object):
 
 class GoodsXadmin(object):
     list_display = ['name', 'category', 'goods_sn', 'goods_brief', 'good_front_image', 'click_num', 'add_time']
+    style_fields = {'desc': 'ueditor'}
 
 
 class CategoryBrandXadmin(object):

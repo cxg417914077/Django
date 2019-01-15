@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from DjangoUeditor.models import UEditorField
 
 # Create your models here.
 
@@ -25,7 +26,15 @@ class Goods(models.Model):
     name = models.CharField(max_length=100, verbose_name='商品名称')
     goods_sn = models.CharField(max_length=30, unique=True, verbose_name='商品唯一编号', null=True, blank=True)
     goods_brief = models.CharField(max_length=300, null=True, blank=True, verbose_name='商品简介')
-    desc = models.TextField(null=True, blank=True, verbose_name='商品详情')
+    desc = UEditorField(verbose_name='商品详情',
+                            width=900,
+                            height=400,
+                            toolbars='full',
+                            imagePath='ueditor/images/',
+                            filePath='ueditor/files/',
+                            upload_settings={'imageMaxSizing':1024000},
+                            default=''
+                        )
     good_front_image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品封面详情')
     market_price = models.FloatField(verbose_name='商品市场价')
     shop_price = models.FloatField(verbose_name='商品店铺价')

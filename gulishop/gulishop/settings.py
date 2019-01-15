@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'operations.apps.OperationsConfig',
     'xadmin',
     'crispy_forms',
+    'DjangoUeditor',
 ]
 
 MIDDLEWARE = [
