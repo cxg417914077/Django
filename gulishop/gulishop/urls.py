@@ -13,16 +13,21 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
 import xadmin
+from rest_framework import routers
+from goods.views import GoodsViewSet
 from django.views.static import serve
 from gulishop.settings import MEDIA_ROOT
-from goods.views import GoodsView
+from django.conf.urls import url, include
+
+router = routers.DefaultRouter()
+router.register(r'goods', GoodsViewSet)
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'^ueditor/', include('DjangoUeditor.urls')),
     url(r'^api-auth/', include('rest_framework.urls')),
-    url(r'^goods/$', GoodsView.as_view()),
+    # url(r'^goods/$', GoodsViewSet.as_view({'get': 'list'})),
+    url(r'', include(router.urls))
 ]

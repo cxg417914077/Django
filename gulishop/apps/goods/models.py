@@ -53,6 +53,7 @@ class Goods(models.Model):
     class Meta:
         verbose_name = '商品详情信息'
         verbose_name_plural = verbose_name
+        ordering = ['id']
 
 
 class CategoryBrand(models.Model):
