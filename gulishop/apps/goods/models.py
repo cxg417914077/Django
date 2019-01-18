@@ -35,7 +35,7 @@ class Goods(models.Model):
                             upload_settings={'imageMaxSizing':1024000},
                             default=''
                         )
-    good_front_image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品封面详情')
+    goods_front_image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品封面详情')
     market_price = models.FloatField(verbose_name='商品市场价')
     shop_price = models.FloatField(verbose_name='商品店铺价')
     ship_free = models.BooleanField(default=True, verbose_name='是否包邮')

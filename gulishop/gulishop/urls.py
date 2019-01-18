@@ -15,13 +15,15 @@ Including another URLconf
 """
 import xadmin
 from rest_framework import routers
-from goods.views import GoodsViewSet
+from goods.views import GoodsViewSet, CategoryViewSet
 from django.views.static import serve
 from gulishop.settings import MEDIA_ROOT
 from django.conf.urls import url, include
+from rest_framework_jwt.views import obtain_jwt_token
 
 router = routers.DefaultRouter()
-router.register(r'goods', GoodsViewSet)
+router.register(r'goods', GoodsViewSet, base_name='goods')
+router.register(r'categorys', CategoryViewSet, base_name='categorys')
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),
@@ -29,5 +31,6 @@ urlpatterns = [
     url(r'^ueditor/', include('DjangoUeditor.urls')),
     url(r'^api-auth/', include('rest_framework.urls')),
     # url(r'^goods/$', GoodsViewSet.as_view({'get': 'list'})),
-    url(r'', include(router.urls))
+    url(r'', include(router.urls)),
+    url(r'^login/', obtain_jwt_token),
 ]
