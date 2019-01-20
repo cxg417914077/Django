@@ -36,3 +36,4 @@ class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
         return self.queryset.filter(category_type=1)
 
 
+

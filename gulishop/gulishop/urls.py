@@ -20,10 +20,13 @@ from django.views.static import serve
 from gulishop.settings import MEDIA_ROOT
 from django.conf.urls import url, include
 from rest_framework_jwt.views import obtain_jwt_token
+from users.views import VerfyCodeViewSet, UserProfileViewSet
 
 router = routers.DefaultRouter()
 router.register(r'goods', GoodsViewSet, base_name='goods')
 router.register(r'categorys', CategoryViewSet, base_name='categorys')
+router.register(r'code', VerfyCodeViewSet, base_name='code')
+router.register(r'users', UserProfileViewSet, base_name='users')
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),
