@@ -15,6 +15,7 @@ class UserFav(models.Model):
         return self.goods.name
 
     class Meta:
+        unique_together = ('user', 'goods')
         verbose_name = '用户收藏信息'
         verbose_name_plural = verbose_name
 
@@ -47,8 +48,8 @@ class UserAddress(models.Model):
     province = models.CharField(max_length=50, verbose_name='省')
     city = models.CharField(max_length=50, verbose_name='市')
     district = models.CharField(max_length=50, verbose_name='区')
-    signing_name = models.CharField(max_length=20, verbose_name='收货人姓名')
-    signing_mobile = models.CharField(max_length=11, verbose_name='联系电话')
+    signer_name = models.CharField(max_length=20, verbose_name='收货人姓名')
+    signer_mobile = models.CharField(max_length=11, verbose_name='联系电话')
     address = models.CharField(max_length=200, verbose_name='收货地址')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 

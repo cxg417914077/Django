@@ -1,11 +1,14 @@
 from .models import VerifyCode, UserProfile
 from rest_framework import viewsets, mixins, status
-from .serializers import VerfyCodeSerializer, UserProfileSerializer
+from .serializers import VerfyCodeSerializer, UserProfileSerializer, UserListSerializer
 import random
 from rest_framework.response import Response
 from utils.yunpian import YunPian
 from gulishop.settings import YUNPIAN_KEY
 from rest_framework_jwt.settings import api_settings
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 
 class VerfyCodeViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
@@ -36,8 +39,28 @@ class VerfyCodeViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
         return code
 
 
-class UserProfileViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
+class UserProfileViewSet(mixins.CreateModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
     serializer_class = UserProfileSerializer
+    authentication_classes = (SessionAuthentication, JSONWebTokenAuthentication)
+    permission_classes = (IsAuthenticated,)
+
+    def get_permissions(self):
+        """
+        Instantiates and returns the list of permissions that this view requires.
+        """
+        if self.action == 'create':
+            return []
+        else:
+            return [permission() for permission in self.permission_classes]
+
+    def get_serializer_class(self):
+        if self.action == 'create':
+            return UserProfileSerializer
+        else:
+            return UserListSerializer
+
+    def get_object(self):
+        return self.request.user
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)

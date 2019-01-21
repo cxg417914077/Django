@@ -21,12 +21,16 @@ from gulishop.settings import MEDIA_ROOT
 from django.conf.urls import url, include
 from rest_framework_jwt.views import obtain_jwt_token
 from users.views import VerfyCodeViewSet, UserProfileViewSet
+from operations.views import UserFavViewSet, UserLeavingMessingViewSet, UserAddressViewSet
 
 router = routers.DefaultRouter()
 router.register(r'goods', GoodsViewSet, base_name='goods')
 router.register(r'categorys', CategoryViewSet, base_name='categorys')
 router.register(r'code', VerfyCodeViewSet, base_name='code')
 router.register(r'users', UserProfileViewSet, base_name='users')
+router.register(r'userfavs', UserFavViewSet, base_name='userfavs')
+router.register(r'messages', UserLeavingMessingViewSet, base_name='messages')
+router.register(r'address', UserAddressViewSet, base_name='address')
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),

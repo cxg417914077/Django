@@ -11,29 +11,53 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/gulishop$52pojie.coverage" NAME="52pojie Coverage Results" MODIFIED="1548032045493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gulishop$import_product.coverage" NAME="import_product Coverage Results" MODIFIED="1548043434789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/gulishop$import_product.coverage" NAME="import_product Coverage Results" MODIFIED="1548068349247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
     <SUITE FILE_PATH="coverage/gulishop$views.coverage" NAME="views Coverage Results" MODIFIED="1547644553929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/goods" />
-    <SUITE FILE_PATH="coverage/gulishop$import_category.coverage" NAME="import_category Coverage Results" MODIFIED="1548043370167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/gulishop$import_category.coverage" NAME="import_category Coverage Results" MODIFIED="1548068340464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulishop/settings.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulishop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="189">
+              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <folding>
+                <element signature="e#642#655#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/operations/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permission.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/utils/permission.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+        <entry file="file://$PROJECT_DIR$/apps/operations/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="147">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -41,11 +65,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminx.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/operations/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="130">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,8 +82,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -71,7 +98,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/apps/trade/models.py" />
-        <option value="$PROJECT_DIR$/apps/operations/models.py" />
         <option value="$PROJECT_DIR$/apps/operations/apps.py" />
         <option value="$PROJECT_DIR$/apps/goods/apps.py" />
         <option value="$PROJECT_DIR$/apps/trade/apps.py" />
@@ -88,17 +114,21 @@
         <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/apps/util/yunpian.py" />
         <option value="$PROJECT_DIR$/apps/utils/yunpian.py" />
-        <option value="$PROJECT_DIR$/gulishop/urls.py" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/filter.py" />
         <option value="$PROJECT_DIR$/52pojie.py" />
-        <option value="$PROJECT_DIR$/aaa.html" />
         <option value="$PROJECT_DIR$/db_tools/import_product.py" />
-        <option value="$PROJECT_DIR$/gulishop/settings.py" />
         <option value="$PROJECT_DIR$/apps/goods/models.py" />
         <option value="$PROJECT_DIR$/apps/goods/adminx.py" />
+        <option value="$PROJECT_DIR$/aaa.html" />
+        <option value="$PROJECT_DIR$/gulishop/settings.py" />
+        <option value="$PROJECT_DIR$/apps/users/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/apps/operations/models.py" />
+        <option value="$PROJECT_DIR$/apps/operations/views.py" />
+        <option value="$PROJECT_DIR$/gulishop/urls.py" />
+        <option value="$PROJECT_DIR$/apps/operations/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/utils/permission.py" />
       </list>
     </option>
   </component>
@@ -139,7 +169,7 @@
               <item name="gulishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="gulishop" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="operations" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gulishop" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.gulishop">
+  <component name="RunManager" selected="Python.import_product">
     <configuration name="52pojie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gulishop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,15 +354,15 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33279222" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37824675" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" x="6" y="302" width="1349" height="333" id="Run" order="2" visible="true" weight="0.33279222" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.37824675" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14901665" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
@@ -354,52 +384,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/operations/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/operations/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -464,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/DjangoUeditor/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -482,13 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="186" column="4" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -532,37 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#178#217#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework_jwt/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
@@ -574,27 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aaa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="359" column="23" lean-forward="true" selection-start-line="359" selection-start-column="23" selection-end-line="359" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/52pojie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -630,13 +552,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_tools/import_category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -644,13 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -668,34 +579,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulishop/urls.py">
+    <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="154">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/52pojie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aaa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="165" column="27" selection-start-line="165" selection-start-column="27" selection-end-line="165" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulishop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/import_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="357">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
+    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="177">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulishop/settings.py">
+    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="147">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <element signature="e#178#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#432#1347#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="200" column="48" selection-start-line="200" selection-start-column="48" selection-end-line="200" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/gulishop/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="273" column="63" lean-forward="true" selection-start-line="269" selection-start-column="4" selection-end-line="273" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/operations/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulishop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding>
+            <element signature="e#642#655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/operations/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/operations/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/permission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
         </state>
       </provider>
     </entry>
