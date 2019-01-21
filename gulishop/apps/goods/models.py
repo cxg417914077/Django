@@ -7,10 +7,10 @@ from DjangoUeditor.models import UEditorField
 
 class GoodsCategory(models.Model):
     name = models.CharField(max_length=20, verbose_name='商品类别名称')
-    category_type = models.CharField(choices=((1, '一级'), (2, '二级'), (3, '三级')), max_length=10, verbose_name='类别级别')
+    category_type = models.IntegerField(choices=((1, '一级'), (2, '二级'), (3, '三级')), verbose_name='类别级别')
     code = models.CharField(max_length=50, verbose_name='类别编号')
     parent_category = models.ForeignKey('self', null=True, blank=True, verbose_name='所属上级类别', related_name='sub_cat')
-    is_tad = models.BooleanField(default=False, verbose_name='是否导航')
+    is_tab = models.BooleanField(default=False, verbose_name='是否导航')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     def __str__(self):
@@ -26,7 +26,7 @@ class Goods(models.Model):
     name = models.CharField(max_length=100, verbose_name='商品名称')
     goods_sn = models.CharField(max_length=30, unique=True, verbose_name='商品唯一编号', null=True, blank=True)
     goods_brief = models.CharField(max_length=300, null=True, blank=True, verbose_name='商品简介')
-    desc = UEditorField(verbose_name='商品详情',
+    goods_desc = UEditorField(verbose_name='商品详情',
                             width=900,
                             height=400,
                             toolbars='full',
@@ -35,7 +35,7 @@ class Goods(models.Model):
                             upload_settings={'imageMaxSizing':1024000},
                             default=''
                         )
-    goods_front_image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品封面详情')
+    goods_front_image = models.ImageField(upload_to='goods/images', max_length=200, verbose_name='商品封面详情', blank=True)
     market_price = models.FloatField(verbose_name='商品市场价')
     shop_price = models.FloatField(verbose_name='商品店铺价')
     ship_free = models.BooleanField(default=True, verbose_name='是否包邮')

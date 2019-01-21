@@ -15,13 +15,13 @@ class CommXadminSetting(object):
 
 
 class GoodsCategoryXadmin(object):
-    list_display = ['name', 'category_type', 'code', 'parent_category', 'is_tad', 'add_time']
+    list_display = ['name', 'category_type', 'code', 'parent_category', 'is_tab', 'add_time']
     model_icon = 'fa fa-shopping-bag'
 
 
 class GoodsXadmin(object):
-    list_display = ['name', 'category', 'goods_sn', 'goods_brief', 'good_front_image', 'click_num', 'add_time']
-    style_fields = {'desc': 'ueditor'}
+    list_display = ['name', 'category', 'goods_sn', 'goods_brief', 'goods_front_image', 'click_num', 'add_time']
+    style_fields = {'goods_desc': 'ueditor'}
 
 
 class CategoryBrandXadmin(object):
