@@ -36,7 +36,6 @@ class UserAddressViewSet(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     serializer_class = UserAddressSerializer
 
-
     def get_queryset(self):
         return UserAddress.objects.filter(user=self.request.user)
 

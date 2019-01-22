@@ -15,6 +15,10 @@ class UserFavSerializer(serializers.ModelSerializer):
 
 
 class UserFavListSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(
+        default=serializers.CurrentUserDefault()
+    )
+    add_time = serializers.DateTimeField(read_only=True, format='%y-%m-%d %H:%M:%S')
     goods = GoodsSerializer(many=False)
 
     class Meta:
