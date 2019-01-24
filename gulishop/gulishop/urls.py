@@ -22,7 +22,7 @@ from django.conf.urls import url, include
 from rest_framework_jwt.views import obtain_jwt_token
 from users.views import VerfyCodeViewSet, UserProfileViewSet
 from operations.views import UserFavViewSet, UserLeavingMessingViewSet, UserAddressViewSet
-from trade.views import ShopCartViewSet, OrderInforViewSet
+from trade.views import ShopCartViewSet, OrderInfoViewSet, AlipayView
 
 router = routers.DefaultRouter()
 router.register(r'goods', GoodsViewSet, base_name='goods')
@@ -33,7 +33,7 @@ router.register(r'userfavs', UserFavViewSet, base_name='userfavs')
 router.register(r'messages', UserLeavingMessingViewSet, base_name='messages')
 router.register(r'address', UserAddressViewSet, base_name='address')
 router.register(r'shopcarts', ShopCartViewSet, base_name='shopcarts')
-router.register(r'orders', OrderInforViewSet, base_name='orders')
+router.register(r'orders', OrderInfoViewSet, base_name='orders')
 
 urlpatterns = [
     url(r'^admin/', xadmin.site.urls),
@@ -43,4 +43,5 @@ urlpatterns = [
     # url(r'^goods/$', GoodsViewSet.as_view({'get': 'list'})),
     url(r'', include(router.urls)),
     url(r'^login/', obtain_jwt_token),
+    url(r'^alipay_return/$', AlipayView.as_view(), name='alipay_return'),
 ]

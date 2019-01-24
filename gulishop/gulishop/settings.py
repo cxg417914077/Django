@@ -27,7 +27,7 @@ SECRET_KEY = 'p&q_pl5dfbfu6i*xkh!#68#@)gbn)59t_8auy_%3b6_yo8^v!-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -166,3 +166,11 @@ JWT_AUTH = {
 MOBILE_RE = "^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
 
 YUNPIAN_KEY = '94e3cafc4543943d7c4de9a2fd687a5f'
+
+# 支付宝配置
+APPID = '2016092300577198'
+APP_NOTIFY_URL = 'http://www.atguigu.com/'
+APP_PRIVATE_KEY_PATH = os.path.join(BASE_DIR, 'apps/trade/keys/private_key.txt')
+ALIPAY_PUBLIC_KEY_PATH = os.path.join(BASE_DIR, 'apps/trade/keys/ali_key_2048.txt')
+RETURN_URL = 'http://127.0.0.1:8000/alipay_return/'
+
